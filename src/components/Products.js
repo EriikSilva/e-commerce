@@ -6,8 +6,7 @@ import Zoom from "react-reveal/Zoom"
 import { connect } from "react-redux";
 import {fetchProducts} from "../actions/productActions"
 import {addToCart}  from "../actions/cartActions"
-
-
+import { FaCartPlus} from "react-icons/fa";
 
 
 class Products extends Component{
@@ -18,8 +17,6 @@ class Products extends Component{
             product: null
         }
     }
-
-   
 
     componentDidMount(){
         this.props.fetchProducts();
@@ -74,23 +71,14 @@ class Products extends Component{
                            </div>
                         <button onClick={()=> 
                             this.props.addToCart(product)}
-                             className="button primary">
-                                                   
-                                 Adicionar ao carrinho
+                             className="button primary">   
+                            <FaCartPlus/> Adicionar ao carrinho
                         </button>
-                           </div>
-                            
-                            {/* REMOVIDO temporariamente */}
-                            {/* 
-                           <div>
-                               {product.descricao}
-                           </div> */}
-
-                         
-
-                           </div>
+                        </div>
+                    
+                    </div>
                            
-                       </li>
+                    </li>
                 )
                 )};
                 </ul>)}
@@ -98,19 +86,29 @@ class Products extends Component{
                 </Fade>
                 {
                     product && (
-                        <Modal isOpen={true} onRequestClose={this.closeModal}>
+                        <Modal  isOpen={true} onRequestClose={this.closeModal}>  
                             <Zoom>
+                             
                                 <button className="close-modal" onClick={this.closeModal}>X</button>
                                 <div className="product-details">
-                                    <img src={product.imagem} alt={product.nome}/>
+                                    <div>
+                                   
+                                    <div className="descricao-modal"> 
+                                        <img src={product.imagem} alt={product.nome}/>
+                                            <h1>Descrição</h1>
+                                            <hr></hr>
+                                               <h3>{product.descricao}</h3>
+                                        </div>
+                                    </div>
+                                   
+
+                                    
                                     <div className="product-details-description">
                                        
                                         <h1> {product.nome}</h1>
+                                                          
                                         <hr></hr>
-                                       {/* <p>
-                                       {product.descricao}
-                                       </p> */}
-                                        
+                                  
                                         <h2>Categoria: <h3>{product.categoria}</h3></h2>
 
                                         <hr></hr>
@@ -130,7 +128,9 @@ class Products extends Component{
                                        
                                     </div>
                                 </div>
+                              
                             </Zoom>
+                              
                         </Modal>
                     )
                 }

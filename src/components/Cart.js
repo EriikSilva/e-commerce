@@ -5,9 +5,14 @@ import { removeFromCart } from "../actions/cartActions";
 import {createOrder, clearOrder} from "../actions/orderActions"
 import Modal from "react-modal";
 import Zoom  from "react-reveal/Zoom";
+import { FiTrash2 } from "react-icons/fi";
+
+
+
 
 
 class Cart extends Component{
+
     constructor(props){
        super(props);
          this.state = {
@@ -17,11 +22,11 @@ class Cart extends Component{
          showCheckout: false
         }
     }
-
+    //pegar o valor do input
     handleInput = (e) => {
         this.setState({[e.target.name]: e.target.value})
     }
-
+    //criar ordem para o form
     createOrder = (e) => {
         e.preventDefault();
         const order = {
@@ -39,23 +44,26 @@ class Cart extends Component{
      }
 
     render(){
+        //recuperando as props do objeto dentro do render
         const {cartItems, order} = this.props;
 
     return(
         <div className="cart-header">
+
+        
         {cartItems.length === 0 ? (<div>Carrinho Vazio</div>
         ):(
         <div>Você tem {cartItems.length} produto(s) no carrinho</div>)}
             
             {
                 order && 
-                <Modal isOpen={true} onRequestClose={this.closeModal}>
+                <Modal isOpen={true} onRequestClose={this.closeModal} >
                     <Zoom>
-                        <button className="close-modal" onClick={this.closeModal}>X</button>
+                    <button className="close-modal" onClick={this.closeModal}>X</button>
                     
                     <div className="order-details">
                         <h3 className="success-message">Compra realizada com sucesso.</h3>
-                        <h2>Pedido {order.id}</h2>
+                        <h2>Código do pedido: {order.id}</h2>
                         <ul>
                             <li>
                             <div>Nome e Sobrenome:</div>
@@ -84,11 +92,13 @@ class Cart extends Component{
                             
                             <li>
                                 <div>Produtos Comprados:</div>
-                            <div>{order.cartItems.map((x) => (
+                            <div>
+                                {order.cartItems.map((x) => (
                                 <div>
                                     {x.count} {" x "} {x.nome}
                                 </div>
-                            ))}</div>
+                                 ))}
+                            </div>
                             </li>
                         </ul>
                     </div>
@@ -114,10 +124,10 @@ class Cart extends Component{
                                 </div>
                                 <div className="right">
 
-                                {"Qtd" + item.count} {" "}
+                                {"Quant.: " + item.count} {" "}
 
                                 <button onClick={()=> this.props.removeFromCart(item)}>
-                                    REMOVER
+                                    <FiTrash2/>
                                 </button>
                                 </div>
 
@@ -140,11 +150,13 @@ class Cart extends Component{
                    
                     <button onClick={() => {this.setState({showCheckout:true})}} 
                     className="button-buy-cart">
-                           Comprar
+                          Comprar
                     </button>
                     
               </div>
-                {this.state.showCheckout  && (
+                {
+                this.state.showCheckout && (
+                    
                     <Fade right cascade>
                     <div className="cart">
                         <form onSubmit={this.createOrder}>

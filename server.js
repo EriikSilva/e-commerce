@@ -56,7 +56,6 @@ const Order = mongoose.model("order", new mongoose.Schema({
         preco: Number,
         count: Number
     }]
-   
 },
     {timestamps:true}
 )

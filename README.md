@@ -29,3 +29,13 @@ In the project directory, you can run:
 
 ## No mongoDB 
 ### `Copiar o link: mongodb://localhost/react-add-to-cart-db para visualizar as compras e seus usuarios`
+
+
+## caso necessario
+### `npm i react-reveal --force`
+### `npm i react-modal --force`
+### `npm i react-scripts --save`
+### `npm i -g nodemon`
+### `npm i`
+
+### Sobre minha expericencia

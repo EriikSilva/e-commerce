@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import {filterProducts, sortProducts} from "../actions/productActions"
 
+
+
+
 class Filter extends Component{
     render(){
         return(
@@ -24,6 +27,10 @@ class Filter extends Component{
                         <option value="lowest">Mais Barato</option>
                         <option value="highest">Mais Caro</option>
                 </select>
+            </div>
+
+            <div>
+                <input type="text"/>
             </div>
 
             <div className="filter-categoria">
