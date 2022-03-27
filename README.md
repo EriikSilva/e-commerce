@@ -14,17 +14,17 @@
 ![filtro](https://user-images.githubusercontent.com/61124602/160263264-ad4a86da-0055-46b9-9d81-22138cbf4948.gif)
 
 ## Adicionei uma modal com o botao de adiconar ao carrinho filtrando os itens por ID
-### A modal serve para mostrar os itens com mais detalhes contendo dentro da modal a descrição
+### A modal serve para mostrar os itens com mais detalhes contendo dentro a descrição do produto
 ![modal por id](https://user-images.githubusercontent.com/61124602/160263358-c82a5626-bf29-4cdb-ac6b-58ebbd5e2bbc.gif)
 
 ## Sobre a minha experiência com este projeto
 ### Aprendi muito com esse projeto, eu já tinha executado os mesmos objetivos desse projeto em angular e usar react com redux implementado o action, store e reducers foi um desafio a mais.
 
 ## Tomada de decisões e dificuldades
-### Ao longo do processo fui priorizando as funcionalidades (adicionar ao carrinho, remover e etc) antes de implementar CSS na página. Após o término das funcionalidades em javascript o css foi implementado porém ainda não tinha um backend em si, foi ai que eu implementei um server.js e a plataforma de aplicação de dados que escolhi foi o MongoDB por ser inuitivo e ter extensões que me auxiliam no desevenvolvimento de debugação.
-### Conforme eu fui programando o projeto, surgiu algumas dificuldades no caminho como a pesquisa de itens em redux. Eu já havia conclúido a pesquisa usando react e o useState. Porém não encontrei uma solução a tempo para implementar em redux já que o sistemas de classes do redux não permitia funções e eu precisava usar o connect() para criar um código mais "clean" assim como conectar ao banco de dados. Uma outra dificuldade foi implementar a segunda API ja que continha nomes e titulos distintos comparado com a primeira API e precisava de um pouco mais de tempo pra achar uma solução para essas implementações específicas
+### Ao longo do processo fui priorizando as funcionalidades (adicionar ao carrinho, remover e etc) antes de implementar CSS na página. Após o término das mesmas em javascript, o css foi implementado porém ainda não tinha um backend em si, foi ai que eu implementei um server.js e a plataforma de aplicação de dados que escolhi foi o MongoDB por ser intuitivo e ter extensões que me auxiliam no desenvolvimento de debugação.
+### Conforme eu fui programando o projeto, surgiram algumas dificuldades no caminho como a pesquisa de itens em redux. Eu já havia concluído a pesquisa usando react e o useState. Entretanto não encontrei uma solução a tempo para implementar em redux já o sistema de classe do redux não permitia funções e eu precisava usar o connect() para criar um código mais "clean", assim como conectar ao banco de dados. Uma outra dificuldade foi implementar a segunda API já que continha nomes e titulos distintos comparado com a primeira API e precisava de um pouco mais de tempo pra achar uma solução para essas implementações específicas
 
-### Tive alguns problemas com a API porque algumas vezes ela ficava fora do ar então optei por baixar a API e inlcuir apenas para o frontend, ja que para o backend eu inseri os dados dos produtos no mongoDB usando o arquivo .json e antes usar a ferramenta em si eu testava algumas inserções no postman assim garantindo a veracidade do backend
+### Tive alguns problemas com a API porque algumas vezes ela ficava fora do ar então optei por baixar a API e incluir apenas para o frontend, visto que para o backend eu inseri os dados dos produtos no mongoDB usando o arquivo .json e antes usar a ferramenta em si eu testava algumas inserções no postman assim garantindo a veracidade do backend
 
 
 
