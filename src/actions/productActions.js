@@ -1,18 +1,21 @@
-import { FETCH_PRODUCTS, FILTER_PRODUCTS_BY_CATEGORIA, ORDER_PRODUCTS_BY_PRECO} from "../types"
-
-
+import { FETCH_PRODUCTS,
+       FILTER_PRODUCTS_BY_CATEGORIA,
+         ORDER_PRODUCTS_BY_PRECO,
+      
+} from "../types"
 
 export const fetchProducts = () => async (dispatch) => {
     const res = await fetch("/api/products");
     const data = await res.json();
-    console.log(data);
+    //console.log(data);
     dispatch({
       type: FETCH_PRODUCTS,
       payload: data,
     });
 };
 
-export const filterProducts = (products, size) => (dispatch)=>{
+
+export const filterProducts = (products, size) => async (dispatch)=>{
   dispatch({
     type: FILTER_PRODUCTS_BY_CATEGORIA,
     payload: {
@@ -40,10 +43,9 @@ export const sortProducts = (filteredProducts, sort) => (dispatch) => {
        :1
     ))
   }
-
-
   dispatch(
-    {type:ORDER_PRODUCTS_BY_PRECO,
+    {
+      type:ORDER_PRODUCTS_BY_PRECO,
       payload:{
         sort:sort,
         items: sortedProducts

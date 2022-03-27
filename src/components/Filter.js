@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component} from "react";
 import { connect } from "react-redux";
 import {filterProducts, sortProducts} from "../actions/productActions"
 
@@ -8,7 +8,8 @@ import {filterProducts, sortProducts} from "../actions/productActions"
 class Filter extends Component{
     render(){
         return(
-            !this.props.filterProducts? ( <div>Loading...</div>
+            !this.props.filterProducts? ( 
+            <div>Loading...</div>
             ):(
             <div className="filter">
             <div className="filter-result">
@@ -28,17 +29,15 @@ class Filter extends Component{
                         <option value="highest">Mais Caro</option>
                 </select>
             </div>
-
-            <div>
-                <input type="text"/>
-            </div>
+            
+            
+              
+          
 
             <div className="filter-categoria">
                     Categoria:
-              
-                    <select value={this.props.size} onChange={(e) => 
-                        this.props.filterProducts(this.props.products,
-                         e.target.value)}>
+                    <select value={this.props.size} 
+                    onChange={(e) => this.props.filterProducts(this.props.products, e.target.value)}>
                         <option value="">Todos</option>
                         <option value="Fantastic">Fantastic</option>
                         <option value="Refined">Refined</option>
@@ -71,12 +70,14 @@ class Filter extends Component{
 
 export default connect((state) => ({
     categoria: state.products.size,
+    id: state.products.id,
     sort: state.products.sort,
     products: state.products.items,
     filteredProducts: state.products.filteredItems,
+
 }), 
 {
     filterProducts,
-    sortProducts,
+    sortProducts
 }
 )(Filter);
