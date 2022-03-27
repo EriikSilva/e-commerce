@@ -2,11 +2,11 @@
 ### Contém Filtrar, pesquisar, adicionar ao carrinho, verificar produto e comprar;
 
 ## Adicionando ao carrinho
-### Assim que o usuário clica no botão de "adcionar ao carrinho", ele é direcionado para a parte da direita com animação inserindo o item no carrinho
+### Assim que o usuário clica no botão de "adicionar ao carrinho", ele é direcionado para a parte da direita com animação inserindo o item no carrinho
 ![add to cart](https://user-images.githubusercontent.com/61124602/160263228-abc204e0-9cec-490d-91b6-f217f0efbee2.gif)
 
 ## Comprando
-### Assim que o usuário decidir por comprar os itens ele terá que preencher um formulário contendo o seu nome, email e endereço
+### Assim que o usuário decidir por comprar os itens, ele terá que preencher um formulário contendo o seu nome, email e endereço
 ![buy](https://user-images.githubusercontent.com/61124602/160263254-39f4f0de-8693-423c-87ff-0e669369b7a1.gif)
 
 ## Filtro por Select e option onde é possivel filtrar por categoria e por preço
