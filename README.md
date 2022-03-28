@@ -49,6 +49,11 @@
 
 ### Em package.json => inserir: "proxy": "http://localhost:3030"
 
+## Rodar o projeto em 2 terminais
+### `npm start`
+### `npm run server`
+
+
 ## Necessario para o backend => ter instalado e mongoDB community
 
 ### insira o endereço `mongodb://localhost/react-add-to-cart-db` no mongoDB
@@ -62,9 +67,7 @@
 ### os pedidos ficarão orders no mongoDB
 
 
-## Rodar o projeto em 2 terminais
-### `npm start`
-### `npm run server`
+
 
 ## Passo importante para inclusão de dados no backend mongoDB 
 ### 
