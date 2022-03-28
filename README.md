@@ -35,17 +35,7 @@
 ### `npm i react-modal --force`
 ### `npm install react-icons --save`
 
-## Necessario para o backend => ter instalado e mongoDB community
 
-### insira o endereço `mongodb://localhost/react-add-to-cart-db` no mongoDB
-![image](https://user-images.githubusercontent.com/61124602/160265051-7031eda1-4e53-4b8e-aa26-1482354727ef.png)
-
-### insira o arquivo datas.json que se encontra na pasta raiz do projeto
-![add](https://user-images.githubusercontent.com/61124602/160265319-705f5a8b-afb9-4906-819c-0321b917d98c.png)
-
-
-
-### os pedidos ficarão orders no mongoDB
 
 ### bibliotecas para serem instaladas obrigatoriamente
 
@@ -58,6 +48,19 @@
 
 
 ### Em package.json => inserir: "proxy": "http://localhost:3030"
+
+## Necessario para o backend => ter instalado e mongoDB community
+
+### insira o endereço `mongodb://localhost/react-add-to-cart-db` no mongoDB
+![image](https://user-images.githubusercontent.com/61124602/160265051-7031eda1-4e53-4b8e-aa26-1482354727ef.png)
+
+### insira o arquivo datas.json que se encontra na pasta raiz do projeto
+![add](https://user-images.githubusercontent.com/61124602/160265319-705f5a8b-afb9-4906-819c-0321b917d98c.png)
+
+
+
+### os pedidos ficarão orders no mongoDB
+
 
 ## Rodar o projeto em 2 terminais
 ### `npm start`
