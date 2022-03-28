@@ -31,8 +31,8 @@
 ## Passos para a instalação do projeto
 ### Necessário para o front-end
 
-### `npm install react-reveal`
-### `npm install react-modal`
+### `npm i react-reveal --force`
+### `npm i react-modal --force`
 ### `npm install react-icons --save`
 
 ## Necessario para o backend => ter instalado e mongoDB community
@@ -47,14 +47,15 @@
 
 ### os pedidos ficarão orders no mongoDB
 
-### bibliotecas para serem instaladas
+### bibliotecas para serem instaladas obrigatoriamente
 
 ### `npm install express body-parser mongoose shortid`
+### `npm install redux react-redux redux-thunk`
 ### `npm i -g nodemon` //caso n tenha o nodemon instalado globalmente
 
 ### "trocar em package.json/scripts => "server" : "nodemon server.js"
 
-### `npm install redux react-redux redux-thunk`
+
 
 ### Em package.json => inserir: "proxy": "http://localhost:3030"
 
@@ -66,12 +67,9 @@
 ### 
 
 ## caso necessário por alguma atualização de versão
-### `npm i react-reveal --force`
-### `npm i react-modal --force`
-### `npm i react-scripts --save`
 ### `npm i`
 
-
+## Qualquer duvida sobre a instalação ou sobre o projeto estarei disponivel pelo email: eriklipe@gmail.com
 
 ## Curiosidade e desenvolvimento
 ### Assim que recebi o desafio optei por escrever os objetivos em um bloco de notas assim como bibliotecas usadas e atualizacoes
