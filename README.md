@@ -50,7 +50,9 @@
 ### Em package.json => inserir: "proxy": "http://localhost:3030"
 
 ## Rodar o projeto em 2 terminais
+## No primeiro terminal
 ### `npm start`
+## No segundo terminal
 ### `npm run server`
 
 
