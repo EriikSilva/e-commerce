@@ -43,12 +43,6 @@
 ### `npm install redux react-redux redux-thunk`
 ### `npm i -g nodemon` //caso n tenha o nodemon instalado globalmente
 
-### "trocar em package.json/scripts => "server" : "nodemon server.js"
-
-
-
-### Em package.json => inserir: "proxy": "http://localhost:3030"
-
 ## Rodar o projeto em 2 terminais
 ## No primeiro terminal
 ### `npm start`
