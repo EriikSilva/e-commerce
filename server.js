@@ -6,10 +6,13 @@ const shortid = require("shortid");
 const app = express();
 app.use(bodyParser.json())
 
-mongoose.connect("mongodb://localhost/react-add-to-cart-db",{
-    useNewUrlParser: true,
-    useUnifiedTopology:true, 
-})
+mongoose.connect("mongodb://localhost/react-add-to-cart-db", (err)=> {
+    if (err) {
+        console.log(`Falha ao conectar ao MongoDb => `, err);
+      } else {
+        console.log(`Conectado com sucesso`);
+      }
+});
 
 const Product = mongoose.model(
     "products",
@@ -57,7 +60,7 @@ const Order = mongoose.model("order", new mongoose.Schema({
         count: Number
     }]
 },
-    {timestamps:true}
+    {timestamps:true} //FORMATO data/hr
 )
 );
 

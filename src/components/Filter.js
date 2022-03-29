@@ -1,4 +1,4 @@
-import React, { Component} from "react";
+import React, {Component} from "react";
 import { connect } from "react-redux";
 import {filterProducts, sortProducts} from "../actions/productActions"
 
@@ -30,10 +30,6 @@ class Filter extends Component{
                 </select>
             </div>
             
-            
-              
-          
-
             <div className="filter-categoria">
                     Categoria:
                     <select value={this.props.size} 
@@ -59,8 +55,6 @@ class Filter extends Component{
                         <option value="Unbranded">Unbranded</option>                   
                     </select>
                 </div>
-
-      
             </div>
 
             )

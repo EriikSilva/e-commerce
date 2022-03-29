@@ -2,17 +2,20 @@
 ### contem Filtrar, pesquisar, adicionar ao carrinho, verificar produto e comprar;
 
 ## Available Scripts
-## Necessario para o front-end
+## Necessario para o front-end e backend
 
 ### `npm install react-reveal`
 ### `npm install react-modal`
-## Necessario para o backend => ter instalado o postman e mongoDB
+
 
 ### `npm install express body-parser mongoose shortid`
+### `npm install redux react-redux redux-thunk`
+
+## Necessario para o backend => ter instalado o postman e mongoDB
 
 ### "trocar em package.json/scripts => "server" : "nodemon server.js"
 
-### `npm install redux react-redux redux-thunk`
+
 
 ### Em package.json => inserir: "proxy": "http://localhost:3030"
 

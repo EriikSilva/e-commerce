@@ -21,10 +21,12 @@ export const filterProducts = (products, size) => async (dispatch)=>{
     payload: {
       size: size,
       items: size === "" ? products:
-      products.filter(x => x.categoria.indexOf(size)>= 0)
+      products.filter(x => x.categoria.indexOf(size) >= 0)
     }
   })
 }
+
+
 
 export const sortProducts = (filteredProducts, sort) => (dispatch) => {
 
@@ -38,7 +40,7 @@ export const sortProducts = (filteredProducts, sort) => (dispatch) => {
        a.preco > b.preco
        ?1
        :-1
-       :a.preco >b.preco
+       :a.preco > b.preco
        ?-1
        :1
     ))
