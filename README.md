@@ -5,9 +5,7 @@
 ## Available Scripts
 ## Necessario para o front-end e backend
 
-### `npm install react-reveal`
-### `npm install react-modal`
-
+### `npm install react-reveal react-modal`
 
 ### `npm install express body-parser mongoose shortid`
 ### `npm install redux react-redux redux-thunk`
