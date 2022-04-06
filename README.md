@@ -9,9 +9,11 @@
 ### `npm install express body-parser mongoose shortid`
 ### `npm install redux react-redux redux-thunk`
 
-## Necessario para o backend => ter instalado o postman e mongoDB
+## Necessario para o backend => ter instalado e mongoDB community
+### Link => https://www.mongodb.com/try/download/community
 
-### "trocar em package.json/scripts => "server" : "nodemon server.js"
+## Será necessario incluir a linha debaixo caso não esteja inserida
+### "inserir em package.json/scripts => "server" : "nodemon server.js"
 
 
 ## Adicionando ao carrinho
@@ -19,7 +21,7 @@
 ![add to cart](https://user-images.githubusercontent.com/61124602/160263228-abc204e0-9cec-490d-91b6-f217f0efbee2.gif)
 
 ## Comprando
-### Assim que o usuário decidir por comprar os itens, ele terá que preencher um formulário contendo o seu nome, email e endereço
+### Assim que o usuário decidir por comprar os itens, ele terá que preencher um formulário contendo o seu nome, email e endereço e os resultados serão os mesmo incluindo a data e hora da compra
 ![buy](https://user-images.githubusercontent.com/61124602/160263254-39f4f0de-8693-423c-87ff-0e669369b7a1.gif)
 
 ## Filtro por Select e option onde é possivel filtrar por categoria e por preço
@@ -55,7 +57,7 @@
 ### `npm run server`
 
 
-## Necessario para o backend => ter instalado e mongoDB community
+## Passo importante para inclusão de dados no backend mongoDB 
 
 ### insira o endereço `mongodb://localhost/react-add-to-cart-db` no mongoDB
 ![image](https://user-images.githubusercontent.com/61124602/160265051-7031eda1-4e53-4b8e-aa26-1482354727ef.png)
@@ -66,8 +68,6 @@
 
 ### os pedidos ficarão orders no mongoDB
 
-## Passo importante para inclusão de dados no backend mongoDB 
-### 
 
 ## caso necessário por alguma atualização de versão
 ### `npm i`
