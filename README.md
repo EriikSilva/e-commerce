@@ -1,10 +1,10 @@
 # Projeto e-commerce para teste em react
 ### Contém Filtrar, pesquisar, adicionar ao carrinho, verificar produto e comprar;
 
-## Available Scripts
 ## Necessario para o front-end e backend
 
 ### `npm install react-reveal react-modal`
+### `npm install react-icons --save`
 
 ### `npm install express body-parser mongoose shortid`
 ### `npm install redux react-redux redux-thunk`
@@ -42,20 +42,11 @@
 
 
 ## Passos para a instalação do projeto
-### Necessário para o front-end
+### Em caso de erros de instalação
 
-### `npm i react-reveal --force`
-### `npm i react-modal --force`
+### `npm i react-reveal react-modal--force`
 ### `npm install react-icons --save`
 
-
-
-### bibliotecas para serem instaladas obrigatoriamente
-
-### `npm install express body-parser mongoose shortid`
-### `npm install redux react-redux redux-thunk`
-### `npm i -g nodemon` //caso n tenha o nodemon instalado globalmente
->>>>>>> 22a6068c32a3d693ba676811c788fd7924b893df
 
 ## Rodar o projeto em 2 terminais
 ## No primeiro terminal
@@ -73,11 +64,7 @@
 ![add](https://user-images.githubusercontent.com/61124602/160265319-705f5a8b-afb9-4906-819c-0321b917d98c.png)
 
 
-
 ### os pedidos ficarão orders no mongoDB
-
-
-
 
 ## Passo importante para inclusão de dados no backend mongoDB 
 ### 
