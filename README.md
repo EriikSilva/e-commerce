@@ -1,7 +1,6 @@
 # Projeto e-commerce para teste em react
 ### Contém Filtrar, pesquisar, adicionar ao carrinho, verificar produto e comprar;
 
-<<<<<<< HEAD
 ## Available Scripts
 ## Necessario para o front-end e backend
 
@@ -15,7 +14,6 @@
 ### "trocar em package.json/scripts => "server" : "nodemon server.js"
 
 
-=======
 ## Adicionando ao carrinho
 ### Assim que o usuário clica no botão de "adicionar ao carrinho", ele é direcionado para a parte da direita com animação inserindo o item no carrinho
 ![add to cart](https://user-images.githubusercontent.com/61124602/160263228-abc204e0-9cec-490d-91b6-f217f0efbee2.gif)
