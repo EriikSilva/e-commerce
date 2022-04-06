@@ -43,7 +43,6 @@
 
 
 
-## Passos para a instalação do projeto
 ### Em caso de erros de instalação
 
 ### `npm i react-reveal react-modal--force`
